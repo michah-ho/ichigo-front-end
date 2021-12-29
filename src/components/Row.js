@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Row = styled.div`
   display:flex;
@@ -14,5 +15,12 @@ const Row = styled.div`
     ${(props) => (props.mobileFlexFlow ? `flex-flow:${props.mobileFlexFlow}` : '')};
   }
 `;
+
+Row.propTypes = {
+  flexFlow: PropTypes.string,
+  height: PropTypes.string,
+  marginBottom: PropTypes.string,
+  mobileFlexFlow: PropTypes.string,
+}
 
 export default Row;

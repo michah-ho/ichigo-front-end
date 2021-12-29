@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import TopLayout from './TopLayout';
 import BottomLayout from './BottomLayout';
-import { shuffleArray } from '../utils/helpers';
+import { shuffleArray } from '../utils/arrayHelpers';
 
 const Container = styled.div`
   margin: 30px;

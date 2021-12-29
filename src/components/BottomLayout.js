@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { VertOneThirdCol, VertTwoThirdsCol, HalfCol, QuarterCol} from './Columns';
 import ContentBox from './ContentBox';
 import Row from './Row';
@@ -31,6 +32,15 @@ function BottomLayout({ colorIndexArr, handleClick }) {
       </QuarterCol>
     </Row>
   )
+}
+
+BottomLayout.propTypes = {
+  colorIndexArr: PropTypes.array,
+  handleClick: PropTypes.func
+}
+
+BottomLayout.defaultProps = {
+  colorIndexArr: [5,6,7,8,9],
 }
 
 export default BottomLayout;

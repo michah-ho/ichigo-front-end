@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import Row from "./Row";
 import { HalfCol, VertHalfCol } from "./Columns";
 import ContentBox from "./ContentBox";
@@ -31,5 +32,14 @@ function TopLayout({ colorIndexArr, handleClick }) {
     </Row>
   );
 };
+
+TopLayout.propTypes = {
+  colorIndexArr: PropTypes.array,
+  handleClick: PropTypes.func
+}
+
+TopLayout.defaultProps = {
+  colorIndexArr: [1,2,3,4],
+}
 
 export default TopLayout;

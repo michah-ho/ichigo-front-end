@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const ColorBox = styled.div`
   display:flex;
@@ -20,6 +21,13 @@ const ColorBox = styled.div`
 function ContentBox(props) {
   const { index, height, handleClick } = props;
   return <ColorBox onClick={handleClick} index={index} height={height}> {props.children} </ColorBox>;
+}
+
+ContentBox.propTypes = {
+  index: PropTypes.number,
+  height: PropTypes.string,
+  handleClick: PropTypes.func,
+  children: PropTypes.node,
 }
 
 export default ContentBox;
