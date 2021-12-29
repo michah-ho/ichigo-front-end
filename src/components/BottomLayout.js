@@ -6,8 +6,8 @@ import Row from './Row';
 function BottomLayout({ colorIndexArr, handleClick }) {
   return (
     <Row>
-      <QuarterCol mobileFullWidth mobileOrder={2}>
-        <Row flexFlow="column" mobileFlexFlow="row">
+      <QuarterCol mobileOrder={2}>
+        <Row flexFlow="column">
           <VertOneThirdCol>
             <ContentBox index={colorIndexArr[0]} handleClick={handleClick}>5</ContentBox>
           </VertOneThirdCol>
@@ -19,8 +19,8 @@ function BottomLayout({ colorIndexArr, handleClick }) {
       <HalfCol mobileFullWidth mobileOrder={1}>
         <ContentBox index={colorIndexArr[2]} handleClick={handleClick} height="350px">7</ContentBox>
       </HalfCol>
-      <QuarterCol mobileFullWidth mobileOrder={3}>
-        <Row flexFlow="column" mobileFlexFlow="row">
+      <QuarterCol mobileOrder={3}>
+        <Row flexFlow="column">
           <VertTwoThirdsCol>
             <ContentBox index={colorIndexArr[3]} handleClick={handleClick}>8</ContentBox>
           </VertTwoThirdsCol>

@@ -19,6 +19,7 @@ export const QuarterCol = styled.div`
     ${(props) => (props.mobileFullWidth ? 'width: 100%' : '')};
     margin-bottom:15px;
     order: ${(props) => (props.mobileOrder ? props.mobileOrder : 'initial')};
+    width:49%;
   }
 `;
 
@@ -41,7 +42,7 @@ export const VertOneThirdCol = styled.div`
   height:31%;
   @media only screen and (max-width:600px) { 
     height:initial;
-    width:49%;
+    margin-bottom:15px;
   }
 `;
 
@@ -49,6 +50,6 @@ export const VertTwoThirdsCol = styled.div`
   height:64%;
   @media only screen and (max-width:600px) { 
     height:initial;
-    width:49%;
+    margin-bottom:15px;
   }
 `;
